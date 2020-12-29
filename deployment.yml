@@ -17,5 +17,24 @@ spec:
       containers:
       - name: udagram-api-users
         image: vdjs/udagram-api-users
+        env:
+        - name: POSTGRES_USERNAME
+          value: "****"
+        - name: POSTGRES_PASSWORD
+          value: "****"
+        - name: POSTGRES_HOST
+          value: "****"
+        - name: POSTGRES_DB
+          value: "****"
+        - name: AWS_BUCKET
+          value: "****"
+        - name: AWS_REGION
+          value: "****"
+        - name: AWS_PROFILE
+          value: "****"
+        - name: JWT_SECRET
+          value: "****"
+        - name: URL
+          value: "****"
         ports:
         - containerPort: 8080
